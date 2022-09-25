@@ -8,4 +8,14 @@
 {{ .Content }}
 {{ end }}
 
+{{ if .Site.Params.cusdis }}
+<div id="cusdis_thread"
+  data-host="https://cusdis.com"
+  data-app-id="{{ .Site.Params.cusdis }}"
+    data-page-id="{{ .File.UniqueID }}" 
+    data-page-url="{{ .Permalink }}"
+    data-page-title="{{ .Title }}"></div>
+
+<script async defer src="https://cusdis.com/js/cusdis.es.js"></script>
+{{ end }}
 {{ partial "footer.html" . }}
