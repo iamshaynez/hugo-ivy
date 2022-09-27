@@ -173,6 +173,13 @@ body {
   min-height: calc(100vh - 60px);
 }
 
+.main .tagline {
+  font-style: italic;
+  text-align: center;
+  font-size: .9em;
+}
+
+
 /* Masthead */
 
 .masthead h1 {
@@ -381,6 +388,7 @@ thead, tfoot, tr:nth-child(even) {
     content: "•\00a0\00a0\00a0";
   }
 
+  
   #menu-label {
     display: inline-block;
     padding: 0 20px;
