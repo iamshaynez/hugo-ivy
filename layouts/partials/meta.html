@@ -4,8 +4,4 @@
 <h3>{{ with .Params.author }}{{ . }}{{ end }}
 {{ if .Params.date }} {{ if .Params.author }} / {{ end }} {{ .Date.Format "2006-01-02" }}{{ end }}</h3>
 
-{{ if .IsPage }}
-<p class="tagline">{{ .WordCount }} characters in total, estimated {{ .ReadingTime }} minutes to read.</p>
-{{ end }}
-<hr>
 {{ end }}
